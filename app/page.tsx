@@ -154,7 +154,7 @@ export default function LuxuryForm() {
     }
   }, [formData.rating]);
 
-  const items = ['Cakes', 'Brownies', 'Cheesecakes', 'Cookies'];
+  const items = ['Cakes', 'Brownies', 'Cheesecakes', 'Pastries'];
 
   // Intro Screen
   if (step === 'intro') {
