@@ -562,7 +562,7 @@ export default function LuxuryForm() {
           {/* Would Order Again */}
           <div>
             <label className="font-sans text-xs uppercase tracking-[0.2em] text-charcoal/60 block mb-4">
-              Would You Return?
+              Would You Order More From Us?
             </label>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
               {[
