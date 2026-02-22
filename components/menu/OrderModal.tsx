@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { MenuItem } from '@/lib/types';
 
-const WHATSAPP_NUMBER = '919876543210';
-const INSTAGRAM_USERNAME = 'kinchanas';
+const WHATSAPP_NUMBER = '919080370407';
+const INSTAGRAM_USERNAME = 'madebykinchanas';
 
 interface OrderModalProps {
   item: MenuItem;

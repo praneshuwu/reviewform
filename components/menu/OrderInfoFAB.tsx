@@ -3,8 +3,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const WHATSAPP_NUMBER = '919876543210';
-const INSTAGRAM_USERNAME = 'kinchanas';
+const WHATSAPP_NUMBER = '919080370407';
+const INSTAGRAM_USERNAME = 'madebykinchanas';
 
 export default function OrderInfoFAB() {
   const [isOpen, setIsOpen] = useState(false);
