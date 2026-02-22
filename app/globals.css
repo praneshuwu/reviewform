@@ -72,3 +72,29 @@ button:focus-visible {
 .rating-star:hover svg {
   filter: drop-shadow(0 2px 4px rgba(139, 0, 0, 0.2));
 }
+
+/* Menu item image hover */
+.menu-image-hover {
+  transition: transform 0.5s ease;
+}
+.menu-image-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Dietary badge colors */
+.badge-vegan { background: rgba(74, 124, 89, 0.1); color: #4A7C59; }
+.badge-vegetarian { background: rgba(74, 124, 89, 0.07); color: #5A8C69; }
+.badge-gluten-free { background: rgba(180, 140, 60, 0.1); color: #B48C3C; }
+.badge-nut-free { background: rgba(60, 100, 160, 0.1); color: #3C64A0; }
+.badge-dairy-free { background: rgba(120, 80, 160, 0.1); color: #7850A0; }
+.badge-eggless { background: rgba(200, 120, 60, 0.1); color: #C8783C; }
+
+/* Toggle switch */
+.toggle-switch {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

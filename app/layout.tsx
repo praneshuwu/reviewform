@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Share Your Experience | Kinchana's",
-  description: "Refined feedback for refined taste",
+  title: "Kinchana's | Baked with Love",
+  description: "Handcrafted bakery creations and customer experiences",
 };
 
 export default function RootLayout({

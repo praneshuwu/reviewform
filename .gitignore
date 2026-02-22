@@ -33,3 +33,8 @@
 # TypeScript
 **/*.tsbuildinfo
 **/next-env.d.ts
+
+# Markdown (except README and setup)
+*.md
+!README.md
+!SETUP.md
