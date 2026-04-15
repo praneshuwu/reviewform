@@ -67,14 +67,14 @@ export default function OrderInfoFAB() {
 
                 {/* Instruction */}
                 <p className="font-serif text-lg text-charcoal font-light leading-snug mb-5">
-                  Tap any item on the menu to craft your order message instantly.
+                  Click on any item to add it to your cart, then proceed to place your order.
                 </p>
 
                 {/* Divider */}
                 <div className="flex items-center gap-3 mb-5">
                   <div className="flex-1 h-px bg-charcoal/8" />
                   <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-charcoal/30">
-                    or reach us directly
+                    need help?
                   </span>
                   <div className="flex-1 h-px bg-charcoal/8" />
                 </div>

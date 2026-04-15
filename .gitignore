@@ -38,3 +38,6 @@
 *.md
 !README.md
 !SETUP.md
+
+# Database migrations
+supabase-migration.sql

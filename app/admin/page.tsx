@@ -5,12 +5,13 @@ import { motion } from 'framer-motion';
 import AdminTabs from '@/components/admin/AdminTabs';
 import ReviewsTab from '@/components/admin/ReviewsTab';
 import MenuTab from '@/components/admin/MenuTab';
+import OrdersTab from '@/components/admin/OrdersTab';
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [activeTab, setActiveTab] = useState<'reviews' | 'menu'>('reviews');
+  const [activeTab, setActiveTab] = useState<'orders' | 'reviews' | 'menu'>('orders');
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -122,6 +123,7 @@ export default function AdminPage() {
         <AdminTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
         {/* Tab Content */}
+        {activeTab === 'orders' && <OrdersTab password={password} />}
         {activeTab === 'reviews' && <ReviewsTab password={password} />}
         {activeTab === 'menu' && <MenuTab password={password} />}
       </div>

@@ -3,12 +3,13 @@
 import { motion } from 'framer-motion';
 
 interface AdminTabsProps {
-  activeTab: 'reviews' | 'menu';
-  onTabChange: (tab: 'reviews' | 'menu') => void;
+  activeTab: 'orders' | 'reviews' | 'menu';
+  onTabChange: (tab: 'orders' | 'reviews' | 'menu') => void;
 }
 
 export default function AdminTabs({ activeTab, onTabChange }: AdminTabsProps) {
   const tabs = [
+    { id: 'orders' as const, label: 'Orders' },
     { id: 'reviews' as const, label: 'Reviews' },
     { id: 'menu' as const, label: 'Menu' },
   ];
