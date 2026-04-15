@@ -10,7 +10,6 @@ export const metadata: Metadata = {
     title: "Kinchana's | Baked with Love",
     description: "We craft each creation with care and intention — from rich, layered cakes to delicate pastries. Explore what we offer or share your thoughts with us.",
     url: "https://www.kinchanas.com",
-    siteName: "Kinchana's Bakery",
     images: [
       {
         url: "https://www.kinchanas.com/meta.png",
