@@ -2,10 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { useCart } from '@/lib/contexts/CartContext';
 
-export default function OrderSuccessPage() {
+function OrderSuccessContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const { clearCart } = useCart();
@@ -177,5 +177,20 @@ export default function OrderSuccessPage() {
         </motion.div>
       </motion.div>
     </div>
+  );
+}
+
+export default function OrderSuccessPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-pearl flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block w-12 h-12 border-2 border-crimson border-t-transparent rounded-full animate-spin mb-4" />
+          <p className="font-sans text-xs uppercase tracking-[0.2em] text-charcoal/60">Loading</p>
+        </div>
+      </div>
+    }>
+      <OrderSuccessContent />
+    </Suspense>
   );
 }

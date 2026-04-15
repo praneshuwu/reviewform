@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import OrderForm from '@/components/orders/OrderForm';
 import { useCart } from '@/lib/contexts/CartContext';
 import type { MenuItem } from '@/lib/types';
 
-export default function OrderPage() {
+function OrderPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { addItem } = useCart();
@@ -103,5 +103,20 @@ export default function OrderPage() {
       {/* Decorative Footer Accent */}
       <div className="fixed bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-crimson/20 to-transparent pointer-events-none" />
     </div>
+  );
+}
+
+export default function OrderPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-pearl flex items-center justify-center">
+        <div className="text-center">
+          <div className="inline-block w-12 h-12 border-2 border-crimson border-t-transparent rounded-full animate-spin mb-4" />
+          <p className="font-sans text-xs uppercase tracking-[0.2em] text-charcoal/60">Loading</p>
+        </div>
+      </div>
+    }>
+      <OrderPageContent />
+    </Suspense>
   );
 }
