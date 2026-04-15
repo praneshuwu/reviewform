@@ -3,14 +3,17 @@ import "./globals.css";
 import { CartProvider } from "@/lib/contexts/CartContext";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.kinchanas.com"),
   title: "Kinchana's | Baked with Love",
   description: "We craft each creation with care and intention — from rich, layered cakes to delicate pastries. Explore what we offer or share your thoughts with us.",
   openGraph: {
     title: "Kinchana's | Baked with Love",
     description: "We craft each creation with care and intention — from rich, layered cakes to delicate pastries. Explore what we offer or share your thoughts with us.",
+    url: "https://www.kinchanas.com",
+    siteName: "Kinchana's Bakery",
     images: [
       {
-        url: "/meta.png",
+        url: "https://www.kinchanas.com/meta.png",
         width: 1200,
         height: 630,
         alt: "Kinchana's Bakery",
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kinchana's | Baked with Love",
     description: "We craft each creation with care and intention — from rich, layered cakes to delicate pastries. Explore what we offer or share your thoughts with us.",
-    images: ["/meta.png"],
+    images: ["https://www.kinchanas.com/meta.png"],
   },
 };
 
